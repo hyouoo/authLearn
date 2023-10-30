@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -42,7 +42,7 @@
     const host = 'http://' + window.location.host;
 
     const href = location.href;
-    const queryString = href.substring(href.indexOf("?")+1)
+    const queryString = href.substring(href.indexOf("?") + 1)
     if (queryString === 'error') {
         const errorDiv = document.getElementById('login-failed');
         errorDiv.style.display = 'block';
